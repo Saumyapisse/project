@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Pisse Travels</title>
+      <link rel="icon" type="image/x-icon" href="D:\Desktop\saumya\project\tt.jpeg">
+
+  <style type="text/css">
+    nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: teal;
+  font-family: "Montserrat", sans-serif;
+}
+
+.heading {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 14px 16px;
+}
+
+.nav-links a:hover:not(.active) {
+  text-decoration: underline;
+}
+
+.nav-links li a.active {
+  background-color: green;
+}
+
+nav .logo p {
+  font-size: 30px;
+  font-weight: bold;
+  float: left;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.contact-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-section form {
+  margin-top: 20px;
+}
+
+.contact-section form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-section form button {
+  background-color: teal;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-section form button:hover {
+  background-color: #007a5e;
+}
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <p>Pisse Travels</p>
+    </div>
+    <ul class="nav-links">
+      <li><a href="file:///D:/Desktop/saumya/project/tour.html">Home</a></li>
+         <li><a href="file:///D:/Desktop/saumya/project/about.html">About</a></li>
+      <li><a href="#" class="active">Contact</a></li>
+   <li><a href="file:///D:/Desktop/saumya/project/more.html">Services</a></li>
+    </ul>
+  </nav>
+  
+  <section class="contact-section">
+    <h1>Contact Us</h1>
+    <p>If you have any questions or inquiries, feel free to contact us using the form below:</p>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</body>
+</html>
